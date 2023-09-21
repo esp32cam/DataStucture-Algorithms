@@ -1,0 +1,2 @@
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ConsoleApp2\Class2\obj\Debug\Class2.csproj.AssemblyReference.cache
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ConsoleApp2\Class2\obj\Debug\Class2.csproj.CoreCompileInputs.cache

@@ -1,0 +1,10 @@
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ProjectCAI203\obj\Debug\ProjectCAI203.csproj.AssemblyReference.cache
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ProjectCAI203\obj\Debug\ProjectCAI203.csproj.CoreCompileInputs.cache
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ProjectCAI203\bin\Debug\ProjectCAI203.exe.config
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ProjectCAI203\bin\Debug\ProjectCAI203.exe
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ProjectCAI203\bin\Debug\ProjectCAI203.pdb
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ProjectCAI203\obj\Debug\ProjectCAI203.exe
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ProjectCAI203\obj\Debug\ProjectCAI203.pdb
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ProjectCAI203\bin\Debug\Collection.dll
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ProjectCAI203\bin\Debug\Collection.pdb
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ProjectCAI203\obj\Debug\ProjectCAI203.csproj.CopyComplete

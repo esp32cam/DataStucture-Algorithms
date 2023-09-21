@@ -1,0 +1,2 @@
+C:\Oepnfilelearningpath\DataStucture&Algorithms\SnProblem\obj\Debug\SnProblem.csproj.AssemblyReference.cache
+C:\Oepnfilelearningpath\DataStucture&Algorithms\SnProblem\obj\Debug\SnProblem.csproj.CoreCompileInputs.cache

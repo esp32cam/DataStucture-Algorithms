@@ -1,0 +1,6 @@
+C:\Oepnfilelearningpath\DataStucture&Algorithms\Collection\obj\Debug\Collection.csproj.AssemblyReference.cache
+C:\Oepnfilelearningpath\DataStucture&Algorithms\Collection\obj\Debug\Collection.csproj.CoreCompileInputs.cache
+C:\Oepnfilelearningpath\DataStucture&Algorithms\Collection\bin\Debug\Collection.dll
+C:\Oepnfilelearningpath\DataStucture&Algorithms\Collection\bin\Debug\Collection.pdb
+C:\Oepnfilelearningpath\DataStucture&Algorithms\Collection\obj\Debug\Collection.dll
+C:\Oepnfilelearningpath\DataStucture&Algorithms\Collection\obj\Debug\Collection.pdb

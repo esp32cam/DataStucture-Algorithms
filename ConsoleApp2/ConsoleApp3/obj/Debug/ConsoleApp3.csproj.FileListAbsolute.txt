@@ -1,0 +1,7 @@
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ConsoleApp2\ConsoleApp3\bin\Debug\ConsoleApp3.exe.config
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ConsoleApp2\ConsoleApp3\bin\Debug\ConsoleApp3.exe
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ConsoleApp2\ConsoleApp3\bin\Debug\ConsoleApp3.pdb
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ConsoleApp2\ConsoleApp3\obj\Debug\ConsoleApp3.csproj.AssemblyReference.cache
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ConsoleApp2\ConsoleApp3\obj\Debug\ConsoleApp3.csproj.CoreCompileInputs.cache
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ConsoleApp2\ConsoleApp3\obj\Debug\ConsoleApp3.exe
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ConsoleApp2\ConsoleApp3\obj\Debug\ConsoleApp3.pdb

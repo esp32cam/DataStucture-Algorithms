@@ -1,0 +1,7 @@
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ConsoleApp2\SnProblem\bin\Debug\SnProblem.exe.config
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ConsoleApp2\SnProblem\bin\Debug\SnProblem.exe
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ConsoleApp2\SnProblem\bin\Debug\SnProblem.pdb
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ConsoleApp2\SnProblem\obj\Debug\SnProblem.csproj.AssemblyReference.cache
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ConsoleApp2\SnProblem\obj\Debug\SnProblem.csproj.CoreCompileInputs.cache
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ConsoleApp2\SnProblem\obj\Debug\SnProblem.exe
+C:\Oepnfilelearningpath\DataStucture&Algorithms\ConsoleApp2\SnProblem\obj\Debug\SnProblem.pdb
