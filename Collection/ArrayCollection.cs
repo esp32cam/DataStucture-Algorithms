@@ -20,7 +20,7 @@ namespace Collection
         }
         private void ensureCapacity()
         {
-            if (SIZE + 1 > data.Length)
+            if (SIZE++ > data.Length)
             {
                 object[] tempdata = new object[2 * SIZE];
                 for (int i = 0; i < SIZE; i++)

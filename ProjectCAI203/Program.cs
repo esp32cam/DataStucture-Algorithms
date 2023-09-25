@@ -11,8 +11,8 @@ namespace ProjectCAI203
     {
         static void Main(string[] args)
         {
-            Set x = new ArraySet(1);
-            x.add(1);x.add(1);x.add(2);
+            ArrayCollection x = new ArrayCollection(10);
+            x.add(1);x.add(3);x.add(4);x.add(5);
             Console.WriteLine(x.Size());
         }
     }

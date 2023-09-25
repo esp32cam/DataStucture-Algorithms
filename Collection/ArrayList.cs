@@ -8,15 +8,16 @@ namespace Collection
 {
     public class ArrayList : List
     {
+        private int SIZE;
+        private object[] data;
+        private int cap;
+
         public ArrayList(int cap)
         {
             data = new object[cap];
             this.cap = cap;
         }
 
-        private int SIZE;
-        private object[] data;
-        private int cap;
         private void ensureCapacity()
         {
             if (SIZE + 1 > data.Length)
@@ -34,33 +35,6 @@ namespace Collection
                 data[i] = data[i - 1];
             data[index] = e;
             SIZE++;
-            throw new NotImplementedException();
-        }
-
-        public void add(object e)
-        {
-            add(SIZE, e);
-            throw new NotImplementedException();
-        }
-
-        public bool contain(object e)
-        {
-            throw new NotImplementedException();
-        }
-
-        public object get(int index)
-        {
-            return data[index];
-            throw new NotImplementedException();
-        }
-
-        public int indexOf(object e)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool IsEmpty()
-        {
             throw new NotImplementedException();
         }
 
@@ -88,6 +62,33 @@ namespace Collection
         }
 
         public int Size()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void add(object e)
+        {
+            add(SIZE, e);
+            throw new NotImplementedException();
+        }
+
+        public bool contain(object e)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object get(int index)
+        {
+            return data[index];
+            throw new NotImplementedException();
+        }
+
+        public int indexOf(object e)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool IsEmpty()
         {
             throw new NotImplementedException();
         }
