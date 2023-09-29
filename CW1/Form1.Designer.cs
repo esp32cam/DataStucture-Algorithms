@@ -109,6 +109,7 @@
             this.button8.TabIndex = 13;
             this.button8.Text = "button8";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // textBox6
             // 
@@ -128,10 +129,11 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(51, 337);
+            this.textBox7.Location = new System.Drawing.Point(51, 248);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(308, 22);
+            this.textBox7.Size = new System.Drawing.Size(409, 22);
             this.textBox7.TabIndex = 16;
+            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // Form1
             // 

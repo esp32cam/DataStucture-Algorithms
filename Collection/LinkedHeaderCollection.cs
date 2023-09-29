@@ -44,7 +44,7 @@ namespace Collection
             return SIZE == 0;
         }
 
-        public void remove(object e)
+        public void Remove(object e)
         {
             LinkedNode node = first;
             while (node.next != null)

@@ -10,7 +10,7 @@ namespace Collection
     {
         void add(object e);
 
-        void remove(object e);
+        void Remove(object e);
 
         bool contain(object e);
 

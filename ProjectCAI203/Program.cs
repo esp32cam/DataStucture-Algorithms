@@ -11,7 +11,7 @@ namespace ProjectCAI203
     {
         static void Main(string[] args)
         {
-            ArrayCollection x = new ArrayCollection(10);
+            SinglyLinkedList x = new LinkedNode(10,12);
             x.add(1);x.add(3);x.add(4);x.add(5);
             Console.WriteLine(x.Size());
         }

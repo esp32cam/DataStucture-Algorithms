@@ -45,7 +45,7 @@ namespace Collection
             return SIZE == 0;
         }
 
-        public void remove(object e)
+        public void Remove(object e)
         {
             //case 1: empty list
             if (first == null) return;

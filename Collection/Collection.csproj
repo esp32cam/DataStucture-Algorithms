@@ -46,12 +46,14 @@
     <Compile Include="ArraySet.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Collections.cs" />
+    <Compile Include="LinkedList.cs" />
     <Compile Include="LinkedCollection.cs" />
     <Compile Include="LinkedHeaderCollection.cs" />
     <Compile Include="LinkedSet.cs" />
     <Compile Include="List.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Set.cs" />
+    <Compile Include="SinglyLinkedList.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

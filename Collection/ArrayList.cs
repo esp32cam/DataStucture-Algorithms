@@ -47,7 +47,7 @@ namespace Collection
             throw new NotImplementedException();
         }
 
-        public void remove(object e)
+        public void Remove(object e)
         {
             int i = indexOf(e);
             if (i > -1)

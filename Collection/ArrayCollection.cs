@@ -57,7 +57,7 @@ namespace Collection
             return SIZE == 0;
         }
 
-        public void remive(object e)
+        public void Remove(object e)
         {
             int i = indexOf(e);
             if (i != -1)
