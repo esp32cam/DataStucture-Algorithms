@@ -16,8 +16,9 @@ namespace Collection
         public ArrayCollection(int cap)
         {
             data = new object[cap];
-            this.cap = cap;
+            this.cap = cap; #-
         }
+        //123Test
         private void ensureCapacity()
         {
             if (SIZE++ > data.Length)
