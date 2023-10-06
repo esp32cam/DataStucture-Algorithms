@@ -18,5 +18,6 @@ namespace Collection
         void set(int index, object e);
 
         int indexOf(object e);
+        
     }
 }
