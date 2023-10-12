@@ -1,0 +1,187 @@
+using System;
+using System.Collections.Generic;
+using System.Threading;
+
+class Program
+{
+    class CustomPoint
+    {
+        public int X { get; set; }
+        public int Y { get; set; }
+
+        public CustomPoint(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+    }
+
+    static char[,] maze = new char[,]
+    {
+        {'1','E','1','1','1','1','1','1','1','1'},
+        {'1','0','1','1','0','0','1','0','0','0'},
+        {'1','0','0','0','0','0','1','0','1','0'},
+        {'1','0','1','1','0','0','1','0','1','0'},
+        {'1','1','1','1','0','0','1','0','1','0'},
+        {'1','1','1','1','1','0','0','0','S','0'},
+        {'1','1','1','1','1','1','1','1','1','1'},
+
+        /*{'1','E','1','1','1','1','1','1','1','1'},
+        {'1','0','1','1','0','0','1','0','0','0'},
+        {'1','0','0','0','0','0','1','0','1','0'},
+        {'1','0','1','1','0','0','1','0','1','0'},
+        {'1','1','1','1','0','0','1','0','1','0'},
+        {'1','1','1','1','1','0','0','0','S','0'},
+        {'1','1','1','1','1','1','1','1','1','1'},*/
+    };
+
+    static int startRow, startCol;
+    static int endRow, endCol;
+    static Stack<CustomPoint> path = new Stack<CustomPoint>();
+    static char[,] visited;
+    static bool exitFound = false;
+    static char[,] pathMaze;
+
+    static void Display(char[,] maze, int i, int j)
+    {
+        // Create a copy of the maze for visualization
+        pathMaze = new char[maze.GetLength(0), maze.GetLength(1)];
+        for (int row = 0; row < maze.GetLength(0); row++)
+        {
+            for (int col = 0; col < maze.GetLength(1); col++)
+            {
+                pathMaze[row, col] = maze[row, col];
+            }
+        }
+
+        // Set the current position and end position
+        pathMaze[i, j] = 'C';
+        pathMaze[endRow, endCol] = 'E';
+
+        // Print the maze
+        Console.Clear();
+        for (int row = 0; row < maze.GetLength(0); row++)
+        {
+            for (int col = 0; col < maze.GetLength(1); col++)
+            {
+                Console.Write(pathMaze[row, col]);
+            }
+            Console.WriteLine();
+        }
+
+        Thread.Sleep(500);
+    }
+
+    static bool IsConnect(CustomPoint a, CustomPoint b)
+    {
+        int i = a.X;
+        int j = a.Y;
+
+        int[] rowOffsets = { -1, 1, 0, 0 };
+        int[] colOffsets = { 0, 0, -1, 1 };
+
+        for (int k = 0; k < 4; k++)
+        {
+            int m = i + rowOffsets[k];
+            int n = j + colOffsets[k];
+            if (m == b.X && n == b.Y)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    static void Main(string[] args)
+    {
+        // Find the start and end positions
+        for (int row = 0; row < maze.GetLength(0); row++)
+        {
+            for (int col = 0; col < maze.GetLength(1); col++)
+            {
+                if (maze[row, col] == 'S')
+                {
+                    startRow = row;
+                    startCol = col;
+                }
+                if (maze[row, col] == 'E')
+                {
+                    endRow = row;
+                    endCol = col;
+                }
+            }
+        }
+
+        visited = new char[maze.GetLength(0), maze.GetLength(1)];
+        for (int row = 0; row < maze.GetLength(0); row++)
+        {
+            for (int col = 0; col < maze.GetLength(1); col++)
+            {
+                visited[row, col] = ' ';
+            }
+        }
+
+        // Begin exploring the maze from the starting position
+        ExploreMaze(startRow, startCol);
+
+        if (!exitFound)
+        {
+            Console.WriteLine("No exit found!");
+        }
+
+        Console.ReadKey();
+    }
+
+    static void ExploreMaze(int currentRow, int currentCol)
+    {
+        Stack<CustomPoint> stack = new Stack<CustomPoint>();
+        stack.Push(new CustomPoint(currentCol, currentRow));
+
+        while (stack.Count > 0)
+        {
+            CustomPoint currentPoint = stack.Pop();
+            currentRow = currentPoint.Y;
+            currentCol = currentPoint.X;
+
+            visited[currentRow, currentCol] = 'V';
+            path.Push(currentPoint);
+            maze[currentRow, currentCol] = '.'; // Turn '0' into '.'
+
+            Display(maze, currentRow, currentCol);
+
+            int[] rowOffsets = { -1, 1, 0, 0 };
+            int[] colOffsets = { 0, 0, -1, 1 };
+
+            bool foundPath = false;
+
+            for (int k = 0; k < 4; k++)
+            {
+                int m = currentRow + rowOffsets[k];
+                int n = currentCol + colOffsets[k];
+
+                if (m >= 0 && m < maze.GetLength(0) && n >= 0 && n < maze.GetLength(1))
+                {
+                    if (maze[m, n] == 'E')
+                    {
+                        Console.WriteLine("Exit found!");
+                        exitFound = true;
+                        return;
+                    }
+                    else if (maze[m, n] == '0' && visited[m, n] != 'V')
+                    {
+                        foundPath = true;
+                        stack.Push(new CustomPoint(n, m));
+                    }
+                }
+            }
+
+            if (!foundPath)
+            {
+                path.Pop();
+                visited[currentRow, currentCol] = 'V';
+                Display(maze, path.Peek().Y, path.Peek().X);
+            }
+        }
+    }
+}
